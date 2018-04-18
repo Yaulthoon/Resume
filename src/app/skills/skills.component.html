@@ -1,0 +1,15 @@
+<h1>Skills</h1>
+
+<div class = "listLeft">
+<ul>
+<li *ngFor = "let skill of skillList; let i = index;">
+<div *ngIf = "!(i % 2)">{{skill}}</div></li>
+</ul>
+</div>
+
+<div class = "listRight">
+<ul>
+<li *ngFor = "let skill of skillList; let i = index;">
+<div *ngIf = "(i % 2)">{{skill}}</div></li>
+</ul>
+</div>
