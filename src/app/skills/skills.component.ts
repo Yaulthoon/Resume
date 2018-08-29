@@ -13,8 +13,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
   
-  skillList = ['HTML', 'CSS with RWD', 'Javascript', 'XML structure', 'Familiar with AngularJs', 
-  'Ajax for Http calls', 'Angular with CLI', 'Constructing SQL queries', 'Familiar with Node.js', 
-  'MySQL and its Node npm'];
+  skillList = ['HTML', 'CSS3', 'Javascript', 'XML', 'JSON', 'TypeScript', 
+  'Ajax', 'Angular 5/6', 'SQL', 'MongoDB', 'Express', 'Mongoose', 'Node.js'];
 
 }

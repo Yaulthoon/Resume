@@ -1,6 +1,13 @@
 <h1>Personal Projects</h1>
+<h3>Note: Click headers for screenshots</h3>
 
-<h2>Previous Project: Autumn Fall</h2>
+<h2>
+<span (click) = "this.toggleHideShow('autumnFall')">Previous Project: Autumn Fall</span>
+</h2>
+
+<div [hidden] = "!this.autumnFall">
+<app-autumn-slideshow></app-autumn-slideshow>
+</div>
 
 <p>
 Autumn Fall was the final project from my website development and 
@@ -11,11 +18,17 @@ project, it does not demonstrate responsive web design principles.
 I enjoyed this project as my first foray into web development.
 </p>
 
+<h2 [ngStyle] = "{'clear': 'both'}">
+<span (click) = "this.toggleHideShow('quizMakers')">Previous Project:  Quiz Maker</span>
+</h2>
 
-<h2>Previous Project:  Quiz Maker</h2>
+<div [hidden] = "!this.quizMakers">
+<app-quiz-slideshow></app-quiz-slideshow>
+</div>
 
 <p>
-My most recent project was my Quiz Maker application.  This app 
+I recently revisited my work with this app and improved much of the code to 
+demonstrate what I have learned since building my first app.  This app 
 allows anyone to make a simple html quiz regardless of their 
 prior programming knowledge.  Quiz Maker allows the user to style 
 the background and text colors of both the question and answer area, 
@@ -27,10 +40,16 @@ was written in both Angular and AngularJs with the source code containing
 some differences between the two versions.
 </p>
 
-<h2>Most Recent Project:  Resume</h2>
+<h2 [ngStyle] = "{'clear': 'both'}">
+<span (click) = "this.toggleHideShow('resume')">Previous Project:  Resume</span>
+</h2>
+
+<div [hidden] = "!this.resume">
+<app-resume-slideshow></app-resume-slideshow>
+</div>
 
 <p>
-This small application is my latest project that I have completed.  I 
+This small application was the second app I completed.  I 
 felt that this app could be a good way for potential employers or fellow 
 developers to understand my personal values and vision for myself while 
 providing an example of my work.  If you wish to view my other projects, 
@@ -38,4 +57,25 @@ links to them are provided in their respective repositories on my Github.
 If I can be of assistance, feel free to 
 contact me using the contact information provided underneath my portrait.  
 Thank you for viewing my work and have a great day.
+</p>
+
+<h2 [ngStyle] = "{'clear': 'both'}">
+<span (click) = "this.toggleHideShow('fetcherQuest')">Most Recent Project:  Fetcher Quest</span>
+</h2>
+
+<div [hidden] = "!this.fetcherQuest">
+<app-fetcher-slideshow></app-fetcher-slideshow>
+</div>
+
+<p>
+Fetcher Quest is an ambitious project to create a text-based, single player 
+game of my own.  Oregon Trail meets puzzle solving.  Join Lupin Fetcher in 
+his seemingly simple errand and help him return home safely, if you can.  This 
+project remains a work in progress as I continue to build assets.  The magic 
+square game shown in the screenshots depicts an example of one of the minigames 
+the game will offer.  Clicking the validate button runs a series of checks (isNaN(), 
+ range of values, repeating numbers) to make sure the magic square is completed properly.  
+ On success, all numbers will glow green and the puzzle is solved.  Please check back 
+ on this project as I plan to update it regularly now that I have finished updating 
+ Quiz Maker.
 </p>

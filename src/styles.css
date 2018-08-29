@@ -4,8 +4,9 @@ body {
 	background-color: #084f7c;
 	}
 	
-span {
+.bio span {
 	color: white;
+	cursor: auto;
 }
 
 h1 {
@@ -24,6 +25,14 @@ h2 {
 	padding-bottom: 5px;
 }
 
+h3 {
+	box-sizing: border-box;
+	margin-top: 0px;
+	text-align: center;
+	font: bold 1.3vw "arial";
+	color: white; /* alt #b4d1f2*/
+}
+
 p {
 	margin-top: 0px;
 	font: 1.2vw "Georgia";
@@ -31,12 +40,11 @@ p {
 }
 	
 img {
+	
 	position: relative;
-	position: absolute;
 	box-sizing: border-box;
-	left: 0%;
 	top: 0%;
-	width: 20%;
+	width: 100%;
 	box-sizing: border-box;
 	padding: 0%;
 	margin: 0%;
@@ -60,7 +68,20 @@ li {
 	width: 90%;
 }
 
-.navigation {
+.resumeContainer {
+	position: relative;
+	top: 0%;
+	background: linear-gradient(to right, #48372f, #69524a);
+}
+
+.bioContainer {
+	box-sizing: border-box;
+	position: relative;
+	left: 0%;
+	width: 20%;
+	}
+
+#navigation {
 	box-sizing: border-box;
 	position: relative;
 	margin: 2% 0% 2% 0%;
@@ -70,15 +91,19 @@ li {
 	background: linear-gradient(to right, #48372f, #69524a);
 }
 
-.navigation a {
+.link {
 	box-sizing: border-box;
 	margin: 1% 2% 1% 2%;
 	font: bold 1.3vw "Arial";
 	color: #bed6f3;
 }
 
-.navigation a:hover {
-	transition: ease-in 0.3s;
+a:hover {
+	transition: ease-in 0.2s;
+	color:white;
+}
+
+.navActive  {
 	color:white;
 }
 
@@ -87,22 +112,36 @@ li {
 	position: relative;
 	float: right;
 	width: 79%;
-	padding: 0% 1.5% 0% 1.5%;
+	padding: 0% 3% 0% 3%;
 	margin-bottom: 10px;
+	transition: all 2s linear;
+}
+
+.container img {
+	position: relative;
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	border: 2px solid #bed6f3;
+	border-radius: 3px;
+	margin: 0% 3% 2% 0%;
+	cursor: pointer;
+	-webkit-user-select: none;
 }
 
 .bio {
 	box-sizing: border-box;
 	position: relative;
-	width: 20%;
-	left: 0%;
-	top: 26vw;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 100%;
+	float: left;
 	text-align: center;
 	font: bold 1vw "Arial";
 	color: white;
 }
 
-.bio p {
+.bio p, a {
 	font: bold 1vw "Arial";
 	color: #bed6f3;
 }
@@ -131,42 +170,54 @@ li {
 	text-align: center;
 }
 
+li {
+	color: white;
+}
+
 @media screen and (max-width: 700px) {
 	
-	.navigation {
+	#navigation {
 		width: 100%;
 		left: 0%;
 	}
 	
-	.navigation a, h1 {
-		font-size: 3.5vw;
+	#navigation a, h1 {
+		font-size: 2.2vw;
 		
 	}
 	
 	.bioContainer {
 		position: relative;
 		left: -5.2%;
+		width: 30%;
+		margin-bottom: 100%;
 	}
 	
 	img {
 		position: relative;
 		margin: 0;
 		padding: 0;
-		width: 40%;
+		width: 100%;
 	}
 	
 	.bio {
 		float: left;
 		top: 0;
-		width: 42%;
+		width: 100%;
+		margin-top: 0;
 	}
 	
-	p, .bio p {
-		font-size: 2.25vw;
+	p, .bio p, .bio a {
+		font-size: 1.7vw;
 	}
 	
 	.container {
-		width: 58%;
+		margin-left: 4%;
+		width: 60%;
+	}
+	
+	.container img {
+		width: 100%;
 	}
 	
 	.listLeft, .listRight {
@@ -180,8 +231,38 @@ li {
 	}
 	
 	ul, h2 {
-		font-size: 2.5vw;
+		font-size: 1.7vw;
+	}
+	
+	h3 {
+		font-size: 1.5vw;
 	}
 	
 }
+
+@media screen and (max-width: 400px) {
 	
+	ul, h2 {
+		font-size: 2.7vw;
+	}
+	
+	p, .bio p, .bio a {
+		font-size: 2.4vw;
+	}
+	
+	h3 {
+		font-size: 2.3vw;
+	}
+	
+	#navigation a, h1 {
+		font-size: 3.5vw;	
+	}
+	
+	.listLeft {
+		margin-top: -7px;
+	}
+	
+	.bio {
+		word-wrap: break-word;
+	}
+}

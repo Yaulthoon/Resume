@@ -9,6 +9,10 @@ import { ValuesComponent } from './values/values.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FutureComponent } from './future/future.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { QuizSlideshowComponent } from './quiz-slideshow/quiz-slideshow.component';
+import { AutumnSlideshowComponent } from './autumn-slideshow/autumn-slideshow.component';
+import { ResumeSlideshowComponent } from './resume-slideshow/resume-slideshow.component';
+import { FetcherSlideshowComponent } from './fetcher-slideshow/fetcher-slideshow.component';
 
 
 @NgModule({
@@ -18,7 +22,11 @@ import { ProjectsComponent } from './projects/projects.component';
     ValuesComponent,
     SkillsComponent,
     FutureComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    QuizSlideshowComponent,
+    AutumnSlideshowComponent,
+    ResumeSlideshowComponent,
+    FetcherSlideshowComponent
   ],
   imports: [
     BrowserModule,

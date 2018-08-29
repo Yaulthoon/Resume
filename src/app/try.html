@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = "John Doe";  // String written inside quotes
+var xLen = x.length;
+var arr = [];
+var string = "";
+for (i = xLen; i >= 0; i--) {
+arr.push(x.slice((i - 1), i));
+}
+for (i = 0; i < arr.length; i++) {
+string += arr[i];
+}
+document.getElementById("demo").innerHTML = string;
+</script>
+
+</body>
+</html>
